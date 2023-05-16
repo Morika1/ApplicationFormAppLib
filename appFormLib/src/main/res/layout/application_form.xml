@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/form_IMG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/form_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Leave Your Details"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/form_LAY_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_TXT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_TXT_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Phone"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_TXT_email"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Email Address"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_TXT_address"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Address"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_TXT_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Additional Info"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/form_BTN_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
