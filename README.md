@@ -25,6 +25,10 @@ dependencyResolutionManagement {
 
 Step 2. Add the dependency to your module:app build.gradle file:
 
+	dependencies {
+	        implementation 'com.github.Morika1:ApplicationFormAppLib:Tag'
+	}
+
 
 
 Usage
