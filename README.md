@@ -15,13 +15,12 @@ Additional info
 
 Step 1. Add the maven repository in your settings.gradle under the section:
 
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-      maven { url 'https://jitpack.io' }
-     
-    }
-}
+	dependencyResolutionManagement {
+    		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+   			 repositories {
+      				maven { url 'https://jitpack.io' }
+    			}
+		}
 
 Step 2. Add the dependency to your module:app build.gradle file:
 
@@ -33,27 +32,27 @@ Step 2. Add the dependency to your module:app build.gradle file:
 
 # Usage
 
-public class MainActivity extends AppCompatActivity {
+	public class MainActivity extends AppCompatActivity {
 
-    Callback_DetailsProtocol callback_detailsProtocol = new Callback_DetailsProtocol() {
-        @Override
-        public void useDetails(ArrayList<String> details) {
-            // use details. details[0] = name, details[1] = phone, details[2] = email, details[3] = address , details[4] = additional info
-            Log.d("In callback", "ready to use details");
-        }
-    };
+		Callback_DetailsProtocol callback_detailsProtocol = new Callback_DetailsProtocol() {
+			@Override
+			public void useDetails(ArrayList<String> details) {
+			// use details. details[0] = name, details[1] = phone, details[2] = email, details[3] = address , details[4] = additional info
+			Log.d("In callback", "ready to use details");
+			}
+		};
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_main);
 
-        ConstraintLayout mainLay = findViewById(R.id.main_LAY_main); // main_LAY_main is the id of the activity_main.xml layout
+			ConstraintLayout mainLay = findViewById(R.id.main_LAY_main); // main_LAY_main is the id of the activity_main.xml layout
 
-        ApplicationForm.get().setCallback_detailsProtocol(callback_detailsProtocol);
-        ApplicationForm.get().generateForm(this, mainLay);
-    }
-}
+			ApplicationForm.get().setCallback_detailsProtocol(callback_detailsProtocol);
+			ApplicationForm.get().generateForm(this, mainLay);
+		}
+	}
 
 
 # Credits
