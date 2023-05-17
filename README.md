@@ -1,6 +1,6 @@
 # ApplicationFormAppLib
 
-[Application Form]
+# Application Form
 
 A simple application form to leave details with the following fields:
 Name 
@@ -11,7 +11,7 @@ Additional info
 
 ![details](https://github.com/Morika1/ApplicationFormAppLib/assets/68543807/085d702c-18ea-4e85-a849-a479e6a6cf81)
 
-[Setup]
+# Setup
 
 Step 1. Add the maven repository in your settings.gradle under the section:
 
@@ -31,7 +31,7 @@ Step 2. Add the dependency to your module:app build.gradle file:
 
 
 
-Usage
+# Usage
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
 }
 
 
-Credits
+# Credits
 
 Glide library in usage to load form's background image.
